@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #282828, #626262); 
+    color: #fff;
+    padding: 10px 20px; 
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 5px #f9a825;
+}
+
+.logo img {
+    height: 120px;
+    position: relative ;
+    right: 17px;
+    bottom:9px;
+}
+
+.service img,
+.trainer img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.service img:hover,
+.trainer img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f9a825;
+}
+
+section {
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer{
+    background: linear-gradient(90deg, #282828, #626262); 
+}
+
+footer .icon img {
+    transition: transform 0.3s ease;
+}
+
+footer .icon img:hover {
+    transform: translateY(-10px); 
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #f9a825;
+    box-shadow: 0 0 8px rgba(249, 168, 37, 0.8);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background: #f9a825;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #c68400;
+}
+
+footer {
+    background: #474747;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer .icon img {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .icon img:hover {
+    transform: scale(1.2);
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.background img {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.background-overlay h1 {
+    color: white;
+    font-size: 3em;
+}
+
+#about .background-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    padding: 20px;
+    max-width: 600px;
+}
+#about h1 {
+    text-align: center;
+    color: #ffffff; 
+    font-size: 3em; 
+    font-weight: bold;
+}
+
+#contact .main {
+    display: flex;                    
+    justify-content: flex-start;      
+    gap: 130px;                        
+    flex-wrap: wrap;      
+    padding: 0;
+    background-color: #5a5858;            
+}
+
+#contact .map {
+    flex: 1;    
+    min-width: 150px;
+    max-width: 400px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#home{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#home .background-overlay p {
+    color: #f5f5f5; 
+    font-size: 1.5em; 
+}
+
+#about {
+    margin-top: 0;
+    padding-top: 0;
+    
+}
+
+#about {
+    background-image: url("your-background-image.jpg"); 
+    background-color: black; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    padding: 50px 0; 
+}
+
+#home {
+    background-image: url("your-background-image.jpg"); 
+    background-color: black; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    padding: 50px 0; 
+}
+form {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#services .grid1 {
+    display: flex;
+    overflow-x: auto; 
+    gap: 20px;        
+    padding: 20px;
+    white-space: nowrap; 
+    color: #cacaca;
+}
+
+#trainers {
+    margin-bottom: 0; 
+    padding-bottom: 0; 
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: translateY(-5px); 
+    color: #f9a825; 
+}
+form input[type="submit"] {
+    background: #f9a825;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #c68400;
+    transform: scale(1.1); /* Slightly enlarge */
+}
+#home .background-overlay h1,
+#home .background-overlay p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.service,
+.trainer {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover,
+.trainer:hover {
+    transform: rotate(3deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+}
+.header {
+    background: linear-gradient(90deg, #393939, #555, #393939);
+    background-size: 300% 100%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#contact {
+    margin-top: 0; 
+    padding-top: 0; 
+}
+
+#trainers .grid1{
+    display: flex;
+    overflow-x: auto; 
+    gap: 20px;        
+    padding: 0px;
+    white-space: nowrap; 
+    color: #cacaca;
+    font-size: 1.2em;
+}
+.service {
+    flex-shrink: 0;  
+    width: 600px;   
+    text-align: center;
+}
+
+.trainer{
+    flex-shrink: 0;  
+    width: 600px;   
+    text-align: center;
+}
+.service img {
+    width: 100%;     
+    height: 70%;   
+}
+
+.trainer img {
+    width: 100%;     
+    height: 70%; 
+}
+
+
+/* .map iframe {
+    width: 100%;
+    height: 300px; 
+} */
+
+
